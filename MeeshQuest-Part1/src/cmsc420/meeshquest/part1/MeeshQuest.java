@@ -27,14 +27,14 @@ public class MeeshQuest {
 
 // --------------------------------------------------------------------------------------------
 //  Uncomment these to read from standard input and output (USE THESE FOR YOUR FINAL SUBMISSION)
-//	private static final boolean USE_STD_IO = true; 
-//	private static String inputFileName = "";
-//	private static String outputFileName = "";
+	private static final boolean USE_STD_IO = true; 
+	private static String inputFileName = "";
+	private static String outputFileName = "";
 // --------------------------------------------------------------------------------------------
 //  Uncomment these to read from a file (USE THESE FOR YOUR TESTING ONLY)
-	private static final boolean USE_STD_IO = false;
-	private static String inputFileName = "test/mytest-input-2.xml";
-	private static String outputFileName = "test/mytest-output.xml";
+//	private static final boolean USE_STD_IO = false;
+//	private static String inputFileName = "test/mytest-input-5.xml";
+//	private static String outputFileName = "test/mytest-output.xml";
 // --------------------------------------------------------------------------------------------
 
 	public static void main(String[] args) {
@@ -61,7 +61,7 @@ public class MeeshQuest {
 		
 		ArrayList<City> clist = new ArrayList<City>();
 		BinarySearchTree<City> names = new BinarySearchTree<City>(); 
-		//TODO: add sg tree
+		SGTree<City> cmap = new SGTree<City>();
 
 		try {
 			// validate and parse XML input
@@ -154,7 +154,7 @@ public class MeeshQuest {
 							City added = new City(name, String.valueOf(Integer.parseInt(x)), String.valueOf(Integer.parseInt(y)), color, String.valueOf(Integer.parseInt(radius)));
 							clist.add(added);
 							names.insert(added);
-							//TODO: add to sg tree
+							cmap.insert(added);
 						}
 					}
 					else if (command.getNodeName().equals("listCities")) {
@@ -191,14 +191,11 @@ public class MeeshQuest {
 							Element cityList = results.createElement("cityList");
 							
 							// sortBy for all cities
-							ArrayList<City> templist = new ArrayList<City>();
 							if (sortBy.compareTo("name") == 0) {
-								templist = names.inOrderTraversal();
-								clist = templist;
+								clist = names.inOrderTraversal();
 							}
 							else {
-								clist.sort((a,b) ->{return a.compareToCoords(b);});
-								//TODO: change to sgtree traversal
+								clist = cmap.inOrderTraversal();
 							}
 							
 							// add cities to city list
@@ -225,7 +222,7 @@ public class MeeshQuest {
 								found = cit;
 								clist.remove(cit);
 								names.delete(cit);
-								//TODO: remove from sgtree
+								cmap.delete(cit);
 								break;
 							}
 						}
@@ -270,7 +267,7 @@ public class MeeshQuest {
 					else if (command.getNodeName().equals("clearAll")) {
 						clist = new ArrayList<City>();
 						names= new BinarySearchTree<City>();
-						//TODO: reset sg tree
+						cmap = new SGTree<City>();
 						
 						// append output to results
 						Element success = results.createElement("success");
@@ -311,7 +308,31 @@ public class MeeshQuest {
 						}
 					}
 					else if (command.getNodeName().equals("printSGTree")) {
-						//TODO
+						if (cmap.isEmpty()) { // no cities in tree
+							Element error = results.createElement("error");
+							root.appendChild(error);
+							error.setAttribute("type", "mapIsEmpty");
+							Element comm = results.createElement("command");
+							comm.setAttribute("name", command.getNodeName());
+							error.appendChild(comm);
+							Element parameters = results.createElement("parameters");
+							error.appendChild(parameters);
+						}
+						else {
+							// append output to results
+							Element success = results.createElement("success");
+							root.appendChild(success);
+							Element comm = results.createElement("command");
+							success.appendChild(comm);
+							comm.setAttribute("name", command.getNodeName());
+							Element parameters = results.createElement("parameters");
+							success.appendChild(parameters);
+							Element output = results.createElement("output");
+							Element sgt = results.createElement("SGTree");
+							cmap.printing(results, sgt);
+							output.appendChild(sgt);
+							success.appendChild(output);
+						}
 					}
 				}
 			}

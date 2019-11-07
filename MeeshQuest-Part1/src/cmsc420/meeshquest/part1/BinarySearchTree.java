@@ -6,6 +6,8 @@ package cmsc420.meeshquest.part1;
  * V.S.Adamchik 2010
  * Source: https://www.cs.cmu.edu/~adamchik/15-121/lectures/Trees/code/BST.java
  * mod. 2019 - Zain Bhaila
+ * added printing to xml, node getData
+ * modified delete, traversals, visibility
  *****************************************************************************/
 
 import java.util.*;
@@ -34,25 +36,6 @@ public class BinarySearchTree <T extends Comparable<T>> implements Iterable<T>
       if(comparator == null) return x.compareTo(y);
       else
       return comparator.compare(x,y);
-   }
-   
-   public T getRootData() {
-	   if (root != null) {	   
-		   return this.root.getData();
-	   }
-	   else {
-		   return null;
-	   }
-   }
-   public BinarySearchTree<T> getLeftSubtree() {
-	   BinarySearchTree<T> temp = new BinarySearchTree<T>();
-	   temp.root = this.root.left;
-	   return temp;
-   }
-   public BinarySearchTree<T> getRightSubtree() {
-	   BinarySearchTree<T> temp = new BinarySearchTree<T>();
-	   temp.root = this.root.right;
-	   return temp;
    }
    
    public void printing(Document results, Element bst) {
