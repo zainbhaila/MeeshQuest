@@ -20,5 +20,5 @@
  <printSGTree/>
  <createCity name="x05" x="5" y="0" radius="0" color="black"/>
  <printSGTree/>
- <printBinarySearchTree/>
- </commands>
+ <printBinarySearchTree/><listCities sortBy="coordinate"></listCities>
+</commands>

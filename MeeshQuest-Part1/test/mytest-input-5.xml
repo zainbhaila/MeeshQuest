@@ -103,5 +103,5 @@
  <createCity name="x49" x="49" y="0" radius="0" color="black"/>
  <createCity name="x48" x="48" y="0" radius="0" color="black"/>
  <printBinarySearchTree/>
- <printSGTree/>
- </commands>
+ <printSGTree/><listCities sortBy="coordinate"></listCities>
+</commands>
