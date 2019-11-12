@@ -114,30 +114,30 @@ public class BinarySearchTree <T extends Comparable<T>> implements Iterable<T>
    {
       root = delete(root, toDelete);
    }
-   private Node<T> delete(Node<T> p, T toDelete)
-   {
-      if (p == null)  throw new RuntimeException("cannot delete.");
-      else
-      if (compare(toDelete, p.data) < 0)
-      p.left = delete (p.left, toDelete);
-      else
-      if (compare(toDelete, p.data)  > 0)
-      p.right = delete (p.right, toDelete);
-      else
-      {
-         if (p.left == null) return p.right;
-         else
-         if (p.right == null) return p.left;
-         else
-         {
-         // get data from the leftmost node in the right subtree
-            p.data = retrieveData(p.right);
-         // delete the leftmost node in the right subtree
-            p.left =  delete(p.right, p.data) ;
-         }
-      }
-      return p;
-   }
+
+	private Node<T> delete(Node<T> p, T toDelete) {
+		if (p == null)
+			throw new RuntimeException("cannot delete.");
+		else if (compare(toDelete, p.data) < 0)
+			p.left = delete(p.left, toDelete);
+		else if (compare(toDelete, p.data) > 0)
+			p.right = delete(p.right, toDelete);
+		else {
+			if (p.left == null) {
+				return p.right;
+			}
+			else if (p.right == null) {
+				return p.left;
+			}
+			else {
+				// get data from the leftmost node in the right subtree
+				p.data = retrieveData(p.right);
+				// delete the leftmost node in the right subtree
+				p.right = delete(p.right, p.data);
+			}
+		}
+		return p;
+	}
    private T retrieveData(Node<T> p)
    {
       while (p.left != null) p = p.left;

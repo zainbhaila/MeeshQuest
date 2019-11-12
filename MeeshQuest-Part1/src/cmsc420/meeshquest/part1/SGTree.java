@@ -55,7 +55,7 @@ public class SGTree<T extends Comparable<T>> extends BinarySearchTree<T> {
 		/*If new tree height exceeds log3/2(m):
 		 - Walk back up the search path until we find the node u closest to the root such that
 			2 * size(u) < 3 * size(u.child)
-		 - Here size(u) is the number of nodes in u’s subtree and u. child is u’s child on search path
+		 - Here size(u) is the number of nodes in u's subtree and u. child is u's child on search path
 		 - A node on the insertion path satisfying this is called a candidate scapegoat
 		 - Rebuild the subtree rooted at u
 		*/
@@ -171,7 +171,9 @@ public class SGTree<T extends Comparable<T>> extends BinarySearchTree<T> {
 		n--;
 		if (2*n < m) {
 			ArrayList<T> temp = inOrderTraversal();
-			this.root = buildSubtree(temp, 0, temp.size());
+			if (temp.size() != 0) {
+				this.root = buildSubtree(temp, 0, temp.size());
+			}
 			m = n;
 		}
 	}
@@ -197,7 +199,9 @@ public class SGTree<T extends Comparable<T>> extends BinarySearchTree<T> {
 				p = p.right;
 			}
 		}
-		p.update();
+		if (p != null) {
+			p.update();
+		}
 		return p;
 	}
 	
