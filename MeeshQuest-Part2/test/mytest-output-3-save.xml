@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<results>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x483"/>
+      <x value="483"/>
+      <y value="871"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x495"/>
+      <x value="495"/>
+      <y value="417"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x708"/>
+      <x value="708"/>
+      <y value="426"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x161"/>
+      <x value="161"/>
+      <y value="685"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x124"/>
+      <x value="124"/>
+      <y value="357"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x517"/>
+      <x value="517"/>
+      <y value="295"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x989"/>
+      <x value="989"/>
+      <y value="956"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x285"/>
+      <x value="285"/>
+      <y value="731"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x489"/>
+      <x value="489"/>
+      <y value="212"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x994"/>
+      <x value="994"/>
+      <y value="147"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x431"/>
+      <x value="431"/>
+      <y value="169"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x147"/>
+      <x value="147"/>
+      <y value="645"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x730"/>
+      <x value="730"/>
+      <y value="232"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x835"/>
+      <x value="835"/>
+      <y value="477"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x163"/>
+      <x value="163"/>
+      <y value="849"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x704"/>
+      <x value="704"/>
+      <y value="131"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x768"/>
+      <x value="768"/>
+      <y value="750"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x934"/>
+      <x value="934"/>
+      <y value="788"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x215"/>
+      <x value="215"/>
+      <y value="482"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x264"/>
+      <x value="264"/>
+      <y value="631"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x695"/>
+      <x value="695"/>
+      <y value="596"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x112"/>
+      <x value="112"/>
+      <y value="150"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x416"/>
+      <x value="416"/>
+      <y value="751"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x772"/>
+      <x value="772"/>
+      <y value="318"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x999"/>
+      <x value="999"/>
+      <y value="101"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x759"/>
+      <x value="759"/>
+      <y value="603"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <error type="duplicateCityName">
+    <command name="createCity"/>
+    <parameters>
+      <name value="x999"/>
+      <x value="999"/>
+      <y value="999"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+  </error>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x717"/>
+      <x value="717"/>
+      <y value="662"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x191"/>
+      <x value="191"/>
+      <y value="178"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x450"/>
+      <x value="450"/>
+      <y value="658"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="listCities"/>
+    <parameters>
+      <sortBy value="name"/>
+    </parameters>
+    <output>
+      <cityList>
+        <city color="black" name="x112" radius="0" x="112" y="150"/>
+        <city color="black" name="x124" radius="0" x="124" y="357"/>
+        <city color="black" name="x147" radius="0" x="147" y="645"/>
+        <city color="black" name="x161" radius="0" x="161" y="685"/>
+        <city color="black" name="x163" radius="0" x="163" y="849"/>
+        <city color="black" name="x191" radius="0" x="191" y="178"/>
+        <city color="black" name="x215" radius="0" x="215" y="482"/>
+        <city color="black" name="x264" radius="0" x="264" y="631"/>
+        <city color="black" name="x285" radius="0" x="285" y="731"/>
+        <city color="black" name="x416" radius="0" x="416" y="751"/>
+        <city color="black" name="x431" radius="0" x="431" y="169"/>
+        <city color="black" name="x450" radius="0" x="450" y="658"/>
+        <city color="black" name="x483" radius="0" x="483" y="871"/>
+        <city color="black" name="x489" radius="0" x="489" y="212"/>
+        <city color="black" name="x495" radius="0" x="495" y="417"/>
+        <city color="black" name="x517" radius="0" x="517" y="295"/>
+        <city color="black" name="x695" radius="0" x="695" y="596"/>
+        <city color="black" name="x704" radius="0" x="704" y="131"/>
+        <city color="black" name="x708" radius="0" x="708" y="426"/>
+        <city color="black" name="x717" radius="0" x="717" y="662"/>
+        <city color="black" name="x730" radius="0" x="730" y="232"/>
+        <city color="black" name="x759" radius="0" x="759" y="603"/>
+        <city color="black" name="x768" radius="0" x="768" y="750"/>
+        <city color="black" name="x772" radius="0" x="772" y="318"/>
+        <city color="black" name="x835" radius="0" x="835" y="477"/>
+        <city color="black" name="x934" radius="0" x="934" y="788"/>
+        <city color="black" name="x989" radius="0" x="989" y="956"/>
+        <city color="black" name="x994" radius="0" x="994" y="147"/>
+        <city color="black" name="x999" radius="0" x="999" y="101"/>
+      </cityList>
+    </output>
+  </success>
+  <success>
+    <command name="printBinarySearchTree"/>
+    <parameters/>
+    <output>
+      <binarysearchtree>
+        <node name="x483" x="483" y="871">
+          <node name="x161" x="161" y="685">
+            <node name="x124" x="124" y="357">
+              <node name="x112" x="112" y="150"/>
+              <node name="x147" x="147" y="645"/>
+            </node>
+            <node name="x285" x="285" y="731">
+              <node name="x163" x="163" y="849">
+                <node name="x215" x="215" y="482">
+                  <node name="x191" x="191" y="178"/>
+                  <node name="x264" x="264" y="631"/>
+                </node>
+              </node>
+              <node name="x431" x="431" y="169">
+                <node name="x416" x="416" y="751"/>
+                <node name="x450" x="450" y="658"/>
+              </node>
+            </node>
+          </node>
+          <node name="x495" x="495" y="417">
+            <node name="x489" x="489" y="212"/>
+            <node name="x708" x="708" y="426">
+              <node name="x517" x="517" y="295">
+                <node name="x704" x="704" y="131">
+                  <node name="x695" x="695" y="596"/>
+                </node>
+              </node>
+              <node name="x989" x="989" y="956">
+                <node name="x730" x="730" y="232">
+                  <node name="x717" x="717" y="662"/>
+                  <node name="x835" x="835" y="477">
+                    <node name="x768" x="768" y="750">
+                      <node name="x759" x="759" y="603"/>
+                      <node name="x772" x="772" y="318"/>
+                    </node>
+                    <node name="x934" x="934" y="788"/>
+                  </node>
+                </node>
+                <node name="x994" x="994" y="147">
+                  <node name="x999" x="999" y="101"/>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </binarysearchtree>
+    </output>
+  </success>
+  <success>
+    <command name="printKdTree"/>
+    <parameters/>
+    <output>
+      <KdTree>
+        <internal splitDim="1" x="495" y="417">
+          <internal splitDim="0" x="489" y="212">
+            <internal splitDim="0" x="431" y="169">
+              <internal splitDim="0" x="124" y="357">
+                <internal splitDim="1" x="112" y="150">
+                  <external name="x112" x="112" y="150"/>
+                  <external name="x124" x="124" y="357"/>
+                </internal>
+                <internal splitDim="0" x="191" y="178">
+                  <external name="x191" x="191" y="178"/>
+                  <external name="x431" x="431" y="169"/>
+                </internal>
+              </internal>
+              <external name="x489" x="489" y="212"/>
+            </internal>
+            <internal splitDim="0" x="517" y="295">
+              <internal splitDim="1" x="517" y="295">
+                <external name="x517" x="517" y="295"/>
+                <external name="x495" x="495" y="417"/>
+              </internal>
+              <internal splitDim="0" x="730" y="232">
+                <internal splitDim="1" x="704" y="131">
+                  <external name="x704" x="704" y="131"/>
+                  <external name="x730" x="730" y="232"/>
+                </internal>
+                <internal splitDim="0" x="772" y="318">
+                  <external name="x772" x="772" y="318"/>
+                  <internal splitDim="1" x="999" y="101">
+                    <external name="x999" x="999" y="101"/>
+                    <external name="x994" x="994" y="147"/>
+                  </internal>
+                </internal>
+              </internal>
+            </internal>
+          </internal>
+          <internal splitDim="0" x="285" y="731">
+            <internal splitDim="1" x="147" y="645">
+              <internal splitDim="1" x="264" y="631">
+                <internal splitDim="1" x="215" y="482">
+                  <external name="x215" x="215" y="482"/>
+                  <external name="x264" x="264" y="631"/>
+                </internal>
+                <external name="x147" x="147" y="645"/>
+              </internal>
+              <internal splitDim="1" x="285" y="731">
+                <internal splitDim="0" x="161" y="685">
+                  <external name="x161" x="161" y="685"/>
+                  <external name="x285" x="285" y="731"/>
+                </internal>
+                <external name="x163" x="163" y="849"/>
+              </internal>
+            </internal>
+            <internal splitDim="1" x="768" y="750">
+              <internal splitDim="1" x="835" y="477">
+                <internal splitDim="0" x="708" y="426">
+                  <external name="x708" x="708" y="426"/>
+                  <external name="x835" x="835" y="477"/>
+                </internal>
+                <internal splitDim="1" x="695" y="596">
+                  <external name="x695" x="695" y="596"/>
+                  <internal splitDim="1" x="759" y="603">
+                    <external name="x759" x="759" y="603"/>
+                    <internal splitDim="1" x="717" y="662">
+                      <internal splitDim="0" x="450" y="658">
+                        <external name="x450" x="450" y="658"/>
+                        <external name="x717" x="717" y="662"/>
+                      </internal>
+                      <external name="x768" x="768" y="750"/>
+                    </internal>
+                  </internal>
+                </internal>
+              </internal>
+              <internal splitDim="0" x="934" y="788">
+                <internal splitDim="0" x="483" y="871">
+                  <internal splitDim="1" x="416" y="751">
+                    <external name="x416" x="416" y="751"/>
+                    <external name="x483" x="483" y="871"/>
+                  </internal>
+                  <external name="x934" x="934" y="788"/>
+                </internal>
+                <external name="x989" x="989" y="956"/>
+              </internal>
+            </internal>
+          </internal>
+        </internal>
+      </KdTree>
+    </output>
+  </success>
+  <success>
+    <command name="nearestNeighbor"/>
+    <parameters>
+      <x value="563"/>
+      <y value="804"/>
+    </parameters>
+    <output>
+      <nearestNeighbor color="black" name="x483" radius="0" x="483" y="871"/>
+    </output>
+  </success>
+  <success>
+    <command name="nearestNeighbor"/>
+    <parameters>
+      <x value="304"/>
+      <y value="760"/>
+    </parameters>
+    <output>
+      <nearestNeighbor color="black" name="x285" radius="0" x="285" y="731"/>
+    </output>
+  </success>
+  <success>
+    <command name="nearestNeighbor"/>
+    <parameters>
+      <x value="799"/>
+      <y value="807"/>
+    </parameters>
+    <output>
+      <nearestNeighbor color="black" name="x768" radius="0" x="768" y="750"/>
+    </output>
+  </success>
+  <success>
+    <command name="nearestNeighbor"/>
+    <parameters>
+      <x value="485"/>
+      <y value="743"/>
+    </parameters>
+    <output>
+      <nearestNeighbor color="black" name="x416" radius="0" x="416" y="751"/>
+    </output>
+  </success>
+  <success>
+    <command name="nearestNeighbor"/>
+    <parameters>
+      <x value="944"/>
+      <y value="195"/>
+    </parameters>
+    <output>
+      <nearestNeighbor color="black" name="x994" radius="0" x="994" y="147"/>
+    </output>
+  </success>
+  <success>
+    <command name="nearestNeighbor"/>
+    <parameters>
+      <x value="718"/>
+      <y value="914"/>
+    </parameters>
+    <output>
+      <nearestNeighbor color="black" name="x768" radius="0" x="768" y="750"/>
+    </output>
+  </success>
+  <success>
+    <command name="nearestNeighbor"/>
+    <parameters>
+      <x value="164"/>
+      <y value="844"/>
+    </parameters>
+    <output>
+      <nearestNeighbor color="black" name="x163" radius="0" x="163" y="849"/>
+    </output>
+  </success>
+  <success>
+    <command name="nearestNeighbor"/>
+    <parameters>
+      <x value="183"/>
+      <y value="885"/>
+    </parameters>
+    <output>
+      <nearestNeighbor color="black" name="x163" radius="0" x="163" y="849"/>
+    </output>
+  </success>
+  <success>
+    <command name="nearestNeighbor"/>
+    <parameters>
+      <x value="482"/>
+      <y value="937"/>
+    </parameters>
+    <output>
+      <nearestNeighbor color="black" name="x483" radius="0" x="483" y="871"/>
+    </output>
+  </success>
+  <success>
+    <command name="nearestNeighbor"/>
+    <parameters>
+      <x value="348"/>
+      <y value="193"/>
+    </parameters>
+    <output>
+      <nearestNeighbor color="black" name="x431" radius="0" x="431" y="169"/>
+    </output>
+  </success>
+  <success>
+    <command name="nearestNeighbor"/>
+    <parameters>
+      <x value="722"/>
+      <y value="684"/>
+    </parameters>
+    <output>
+      <nearestNeighbor color="black" name="x717" radius="0" x="717" y="662"/>
+    </output>
+  </success>
+</results>

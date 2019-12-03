@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<results>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="Edinburgh"/>
+      <x value="500"/>
+      <y value="500"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="Lisbon"/>
+      <x value="750"/>
+      <y value="600"/>
+      <radius value="0"/>
+      <color value="orange"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="Varna"/>
+      <x value="400"/>
+      <y value="800"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="London"/>
+      <x value="300"/>
+      <y value="400"/>
+      <radius value="0"/>
+      <color value="yellow"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="Prague"/>
+      <x value="200"/>
+      <y value="200"/>
+      <radius value="0"/>
+      <color value="green"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="printBinarySearchTree"/>
+    <parameters/>
+    <output>
+      <binarysearchtree>
+        <node name="Edinburgh" x="500" y="500">
+          <node name="Lisbon" x="750" y="600">
+            <node name="Varna" x="400" y="800">
+              <node name="London" x="300" y="400">
+                <node name="Prague" x="200" y="200"/>
+              </node>
+            </node>
+          </node>
+        </node>
+      </binarysearchtree>
+    </output>
+  </success>
+  <success>
+    <command name="printKdTree"/>
+    <parameters/>
+    <output>
+      <KdTree>
+        <internal splitDim="1" x="500" y="500">
+          <internal splitDim="0" x="300" y="400">
+            <internal splitDim="1" x="200" y="200">
+              <external name="Prague" x="200" y="200"/>
+              <external name="London" x="300" y="400"/>
+            </internal>
+            <external name="Edinburgh" x="500" y="500"/>
+          </internal>
+          <internal splitDim="0" x="400" y="800">
+            <external name="Varna" x="400" y="800"/>
+            <external name="Lisbon" x="750" y="600"/>
+          </internal>
+        </internal>
+      </KdTree>
+    </output>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="Madrid"/>
+      <x value="900"/>
+      <y value="450"/>
+      <radius value="0"/>
+      <color value="blue"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="Paris"/>
+      <x value="700"/>
+      <y value="300"/>
+      <radius value="0"/>
+      <color value="purple"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="Copenhagen"/>
+      <x value="800"/>
+      <y value="100"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="Nice"/>
+      <x value="850"/>
+      <y value="250"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="printBinarySearchTree"/>
+    <parameters/>
+    <output>
+      <binarysearchtree>
+        <node name="Edinburgh" x="500" y="500">
+          <node name="Copenhagen" x="800" y="100"/>
+          <node name="Lisbon" x="750" y="600">
+            <node name="Varna" x="400" y="800">
+              <node name="London" x="300" y="400">
+                <node name="Prague" x="200" y="200">
+                  <node name="Madrid" x="900" y="450">
+                    <node name="Paris" x="700" y="300">
+                      <node name="Nice" x="850" y="250"/>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </binarysearchtree>
+    </output>
+  </success>
+  <success>
+    <command name="printKdTree"/>
+    <parameters/>
+    <output>
+      <KdTree>
+        <internal splitDim="0" x="700" y="300">
+          <internal splitDim="1" x="300" y="400">
+            <internal splitDim="0" x="300" y="400">
+              <internal splitDim="1" x="200" y="200">
+                <external name="Prague" x="200" y="200"/>
+                <external name="London" x="300" y="400"/>
+              </internal>
+              <external name="Paris" x="700" y="300"/>
+            </internal>
+            <internal splitDim="1" x="500" y="500">
+              <external name="Edinburgh" x="500" y="500"/>
+              <external name="Varna" x="400" y="800"/>
+            </internal>
+          </internal>
+          <internal splitDim="1" x="850" y="250">
+            <internal splitDim="1" x="800" y="100">
+              <external name="Copenhagen" x="800" y="100"/>
+              <external name="Nice" x="850" y="250"/>
+            </internal>
+            <internal splitDim="0" x="750" y="600">
+              <external name="Lisbon" x="750" y="600"/>
+              <external name="Madrid" x="900" y="450"/>
+            </internal>
+          </internal>
+        </internal>
+      </KdTree>
+    </output>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="Vienna"/>
+      <x value="200"/>
+      <y value="600"/>
+      <radius value="0"/>
+      <color value="orange"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="Amsterdam"/>
+      <x value="550"/>
+      <y value="150"/>
+      <radius value="0"/>
+      <color value="yellow"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="Munich"/>
+      <x value="100"/>
+      <y value="900"/>
+      <radius value="0"/>
+      <color value="green"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="Milan"/>
+      <x value="950"/>
+      <y value="850"/>
+      <radius value="0"/>
+      <color value="blue"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="Rome"/>
+      <x value="800"/>
+      <y value="750"/>
+      <radius value="0"/>
+      <color value="purple"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="Naples"/>
+      <x value="600"/>
+      <y value="950"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="Geneva"/>
+      <x value="650"/>
+      <y value="700"/>
+      <radius value="0"/>
+      <color value="orange"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="printBinarySearchTree"/>
+    <parameters/>
+    <output>
+      <binarysearchtree>
+        <node name="Edinburgh" x="500" y="500">
+          <node name="Copenhagen" x="800" y="100">
+            <node name="Amsterdam" x="550" y="150"/>
+          </node>
+          <node name="Lisbon" x="750" y="600">
+            <node name="Geneva" x="650" y="700"/>
+            <node name="Varna" x="400" y="800">
+              <node name="London" x="300" y="400">
+                <node name="Prague" x="200" y="200">
+                  <node name="Madrid" x="900" y="450">
+                    <node name="Paris" x="700" y="300">
+                      <node name="Nice" x="850" y="250">
+                        <node name="Munich" x="100" y="900">
+                          <node name="Milan" x="950" y="850"/>
+                          <node name="Naples" x="600" y="950"/>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node name="Rome" x="800" y="750"/>
+                </node>
+              </node>
+              <node name="Vienna" x="200" y="600"/>
+            </node>
+          </node>
+        </node>
+      </binarysearchtree>
+    </output>
+  </success>
+  <success>
+    <command name="printKdTree"/>
+    <parameters/>
+    <output>
+      <KdTree>
+        <internal splitDim="0" x="700" y="300">
+          <internal splitDim="1" x="300" y="400">
+            <internal splitDim="0" x="300" y="400">
+              <internal splitDim="1" x="200" y="200">
+                <external name="Prague" x="200" y="200"/>
+                <external name="London" x="300" y="400"/>
+              </internal>
+              <internal splitDim="0" x="550" y="150">
+                <external name="Amsterdam" x="550" y="150"/>
+                <external name="Paris" x="700" y="300"/>
+              </internal>
+            </internal>
+            <internal splitDim="1" x="500" y="500">
+              <external name="Edinburgh" x="500" y="500"/>
+              <internal splitDim="0" x="200" y="600">
+                <internal splitDim="1" x="200" y="600">
+                  <external name="Vienna" x="200" y="600"/>
+                  <external name="Munich" x="100" y="900"/>
+                </internal>
+                <internal splitDim="0" x="400" y="800">
+                  <external name="Varna" x="400" y="800"/>
+                  <internal splitDim="1" x="650" y="700">
+                    <external name="Geneva" x="650" y="700"/>
+                    <external name="Naples" x="600" y="950"/>
+                  </internal>
+                </internal>
+              </internal>
+            </internal>
+          </internal>
+          <internal splitDim="1" x="850" y="250">
+            <internal splitDim="1" x="800" y="100">
+              <external name="Copenhagen" x="800" y="100"/>
+              <external name="Nice" x="850" y="250"/>
+            </internal>
+            <internal splitDim="0" x="750" y="600">
+              <external name="Lisbon" x="750" y="600"/>
+              <internal splitDim="1" x="900" y="450">
+                <external name="Madrid" x="900" y="450"/>
+                <internal splitDim="0" x="800" y="750">
+                  <external name="Rome" x="800" y="750"/>
+                  <external name="Milan" x="950" y="850"/>
+                </internal>
+              </internal>
+            </internal>
+          </internal>
+        </internal>
+      </KdTree>
+    </output>
+  </success>
+  <error type="duplicateCityCoordinates">
+    <command name="createCity"/>
+    <parameters>
+      <name value="Geneva_Duplicate"/>
+      <x value="650"/>
+      <y value="700"/>
+      <radius value="1"/>
+      <color value="black"/>
+    </parameters>
+  </error>
+  <error type="duplicateCityName">
+    <command name="createCity"/>
+    <parameters>
+      <name value="Rome"/>
+      <x value="600"/>
+      <y value="750"/>
+      <radius value="1"/>
+      <color value="black"/>
+    </parameters>
+  </error>
+  <error type="duplicateCityCoordinates">
+    <command name="createCity"/>
+    <parameters>
+      <name value="London"/>
+      <x value="300"/>
+      <y value="400"/>
+      <radius value="2"/>
+      <color value="blue"/>
+    </parameters>
+  </error>
+  <error type="cityOutOfBounds">
+    <command name="createCity"/>
+    <parameters>
+      <name value="Chicago"/>
+      <x value="1025"/>
+      <y value="100"/>
+      <radius value="1"/>
+      <color value="blue"/>
+    </parameters>
+  </error>
+  <success>
+    <command name="printBinarySearchTree"/>
+    <parameters/>
+    <output>
+      <binarysearchtree>
+        <node name="Edinburgh" x="500" y="500">
+          <node name="Copenhagen" x="800" y="100">
+            <node name="Amsterdam" x="550" y="150"/>
+          </node>
+          <node name="Lisbon" x="750" y="600">
+            <node name="Geneva" x="650" y="700"/>
+            <node name="Varna" x="400" y="800">
+              <node name="London" x="300" y="400">
+                <node name="Prague" x="200" y="200">
+                  <node name="Madrid" x="900" y="450">
+                    <node name="Paris" x="700" y="300">
+                      <node name="Nice" x="850" y="250">
+                        <node name="Munich" x="100" y="900">
+                          <node name="Milan" x="950" y="850"/>
+                          <node name="Naples" x="600" y="950"/>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node name="Rome" x="800" y="750"/>
+                </node>
+              </node>
+              <node name="Vienna" x="200" y="600"/>
+            </node>
+          </node>
+        </node>
+      </binarysearchtree>
+    </output>
+  </success>
+  <success>
+    <command name="printKdTree"/>
+    <parameters/>
+    <output>
+      <KdTree>
+        <internal splitDim="0" x="700" y="300">
+          <internal splitDim="1" x="300" y="400">
+            <internal splitDim="0" x="300" y="400">
+              <internal splitDim="1" x="200" y="200">
+                <external name="Prague" x="200" y="200"/>
+                <external name="London" x="300" y="400"/>
+              </internal>
+              <internal splitDim="0" x="550" y="150">
+                <external name="Amsterdam" x="550" y="150"/>
+                <external name="Paris" x="700" y="300"/>
+              </internal>
+            </internal>
+            <internal splitDim="1" x="500" y="500">
+              <external name="Edinburgh" x="500" y="500"/>
+              <internal splitDim="0" x="200" y="600">
+                <internal splitDim="1" x="200" y="600">
+                  <external name="Vienna" x="200" y="600"/>
+                  <external name="Munich" x="100" y="900"/>
+                </internal>
+                <internal splitDim="0" x="400" y="800">
+                  <external name="Varna" x="400" y="800"/>
+                  <internal splitDim="1" x="650" y="700">
+                    <external name="Geneva" x="650" y="700"/>
+                    <external name="Naples" x="600" y="950"/>
+                  </internal>
+                </internal>
+              </internal>
+            </internal>
+          </internal>
+          <internal splitDim="1" x="850" y="250">
+            <internal splitDim="1" x="800" y="100">
+              <external name="Copenhagen" x="800" y="100"/>
+              <external name="Nice" x="850" y="250"/>
+            </internal>
+            <internal splitDim="0" x="750" y="600">
+              <external name="Lisbon" x="750" y="600"/>
+              <internal splitDim="1" x="900" y="450">
+                <external name="Madrid" x="900" y="450"/>
+                <internal splitDim="0" x="800" y="750">
+                  <external name="Rome" x="800" y="750"/>
+                  <external name="Milan" x="950" y="850"/>
+                </internal>
+              </internal>
+            </internal>
+          </internal>
+        </internal>
+      </KdTree>
+    </output>
+  </success>
+  <success>
+    <command name="deleteCity"/>
+    <parameters>
+      <name value="London"/>
+    </parameters>
+    <output>
+      <cityDeleted color="yellow" name="London" radius="0" x="300" y="400"/>
+    </output>
+  </success>
+  <success>
+    <command name="deleteCity"/>
+    <parameters>
+      <name value="Nice"/>
+    </parameters>
+    <output>
+      <cityDeleted color="red" name="Nice" radius="0" x="850" y="250"/>
+    </output>
+  </success>
+  <success>
+    <command name="deleteCity"/>
+    <parameters>
+      <name value="Amsterdam"/>
+    </parameters>
+    <output>
+      <cityDeleted color="yellow" name="Amsterdam" radius="0" x="550" y="150"/>
+    </output>
+  </success>
+  <success>
+    <command name="deleteCity"/>
+    <parameters>
+      <name value="Rome"/>
+    </parameters>
+    <output>
+      <cityDeleted color="purple" name="Rome" radius="0" x="800" y="750"/>
+    </output>
+  </success>
+  <success>
+    <command name="deleteCity"/>
+    <parameters>
+      <name value="Munich"/>
+    </parameters>
+    <output>
+      <cityDeleted color="green" name="Munich" radius="0" x="100" y="900"/>
+    </output>
+  </success>
+  <success>
+    <command name="deleteCity"/>
+    <parameters>
+      <name value="Edinburgh"/>
+    </parameters>
+    <output>
+      <cityDeleted color="red" name="Edinburgh" radius="0" x="500" y="500"/>
+    </output>
+  </success>
+  <success>
+    <command name="deleteCity"/>
+    <parameters>
+      <name value="Paris"/>
+    </parameters>
+    <output>
+      <cityDeleted color="purple" name="Paris" radius="0" x="700" y="300"/>
+    </output>
+  </success>
+  <success>
+    <command name="deleteCity"/>
+    <parameters>
+      <name value="Lisbon"/>
+    </parameters>
+    <output>
+      <cityDeleted color="orange" name="Lisbon" radius="0" x="750" y="600"/>
+    </output>
+  </success>
+  <success>
+    <command name="deleteCity"/>
+    <parameters>
+      <name value="Milan"/>
+    </parameters>
+    <output>
+      <cityDeleted color="blue" name="Milan" radius="0" x="950" y="850"/>
+    </output>
+  </success>
+  <error type="cityDoesNotExist">
+    <command name="deleteCity"/>
+    <parameters>
+      <name value="London"/>
+    </parameters>
+  </error>
+  <success>
+    <command name="printBinarySearchTree"/>
+    <parameters/>
+    <output>
+      <binarysearchtree>
+        <node name="Geneva" x="650" y="700">
+          <node name="Copenhagen" x="800" y="100"/>
+          <node name="Varna" x="400" y="800">
+            <node name="Prague" x="200" y="200">
+              <node name="Madrid" x="900" y="450">
+                <node name="Naples" x="600" y="950"/>
+              </node>
+            </node>
+            <node name="Vienna" x="200" y="600"/>
+          </node>
+        </node>
+      </binarysearchtree>
+    </output>
+  </success>
+  <success>
+    <command name="printKdTree"/>
+    <parameters/>
+    <output>
+      <KdTree>
+        <internal splitDim="1" x="200" y="600">
+          <internal splitDim="0" x="200" y="600">
+            <internal splitDim="1" x="200" y="200">
+              <external name="Prague" x="200" y="200"/>
+              <external name="Vienna" x="200" y="600"/>
+            </internal>
+            <internal splitDim="1" x="800" y="100">
+              <external name="Copenhagen" x="800" y="100"/>
+              <external name="Madrid" x="900" y="450"/>
+            </internal>
+          </internal>
+          <internal splitDim="0" x="600" y="950">
+            <internal splitDim="0" x="400" y="800">
+              <external name="Varna" x="400" y="800"/>
+              <external name="Naples" x="600" y="950"/>
+            </internal>
+            <external name="Geneva" x="650" y="700"/>
+          </internal>
+        </internal>
+      </KdTree>
+    </output>
+  </success>
+  <success>
+    <command name="listCities"/>
+    <parameters>
+      <sortBy value="name"/>
+    </parameters>
+    <output>
+      <cityList>
+        <city color="black" name="Copenhagen" radius="0" x="800" y="100"/>
+        <city color="orange" name="Geneva" radius="0" x="650" y="700"/>
+        <city color="blue" name="Madrid" radius="0" x="900" y="450"/>
+        <city color="black" name="Naples" radius="0" x="600" y="950"/>
+        <city color="green" name="Prague" radius="0" x="200" y="200"/>
+        <city color="red" name="Varna" radius="0" x="400" y="800"/>
+        <city color="orange" name="Vienna" radius="0" x="200" y="600"/>
+      </cityList>
+    </output>
+  </success>
+  <success>
+    <command name="nearestNeighbor"/>
+    <parameters>
+      <x value="210"/>
+      <y value="330"/>
+    </parameters>
+    <output>
+      <nearestNeighbor color="green" name="Prague" radius="0" x="200" y="200"/>
+    </output>
+  </success>
+  <success>
+    <command name="nearestNeighbor"/>
+    <parameters>
+      <x value="993"/>
+      <y value="102"/>
+    </parameters>
+    <output>
+      <nearestNeighbor color="black" name="Copenhagen" radius="0" x="800" y="100"/>
+    </output>
+  </success>
+  <error type="queryOutOfBounds">
+    <command name="nearestNeighbor"/>
+    <parameters>
+      <x value="100"/>
+      <y value="1025"/>
+    </parameters>
+  </error>
+  <success>
+    <command name="clearAll"/>
+    <parameters/>
+    <output/>
+  </success>
+  <error type="mapIsEmpty">
+    <command name="printKdTree"/>
+    <parameters/>
+  </error>
+  <error type="mapIsEmpty">
+    <command name="printBinarySearchTree"/>
+    <parameters/>
+  </error>
+  <error type="mapIsEmpty">
+    <command name="nearestNeighbor"/>
+    <parameters>
+      <x value="210"/>
+      <y value="330"/>
+    </parameters>
+  </error>
+</results>

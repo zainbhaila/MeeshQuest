@@ -1,0 +1,75 @@
+<commands
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="part2in.xsd"
+	spatialWidth="1024" spatialHeight="1024">
+ <createCity name="x483" x="483" y="871" radius="0" color="black"/>
+ <createCity name="x495" x="495" y="417" radius="0" color="black"/>
+ <createCity name="x708" x="708" y="426" radius="0" color="black"/>
+ <createCity name="x161" x="161" y="685" radius="0" color="black"/>
+ <createCity name="x124" x="124" y="357" radius="0" color="black"/>
+ <createCity name="x517" x="517" y="295" radius="0" color="black"/>
+ <createCity name="x989" x="989" y="956" radius="0" color="black"/>
+ <createCity name="x285" x="285" y="731" radius="0" color="black"/>
+ <createCity name="x489" x="489" y="212" radius="0" color="black"/>
+ <createCity name="x994" x="994" y="147" radius="0" color="black"/>
+ <printKdTree/>
+ <createCity name="x431" x="431" y="169" radius="0" color="black"/>
+ <createCity name="x147" x="147" y="645" radius="0" color="black"/>
+ <createCity name="x730" x="730" y="232" radius="0" color="black"/>
+ <createCity name="x835" x="835" y="477" radius="0" color="black"/>
+ <createCity name="x163" x="163" y="849" radius="0" color="black"/>
+ <createCity name="x704" x="704" y="131" radius="0" color="black"/>
+ <createCity name="x768" x="768" y="750" radius="0" color="black"/>
+ <createCity name="x934" x="934" y="788" radius="0" color="black"/>
+ <createCity name="x215" x="215" y="482" radius="0" color="black"/>
+ <createCity name="x264" x="264" y="631" radius="0" color="black"/>
+ <printKdTree/>
+ <createCity name="x695" x="695" y="596" radius="0" color="black"/>
+ <createCity name="x112" x="112" y="150" radius="0" color="black"/>
+ <createCity name="x416" x="416" y="751" radius="0" color="black"/>
+ <createCity name="x772" x="772" y="318" radius="0" color="black"/>
+ <createCity name="x999" x="999" y="101" radius="0" color="black"/>
+ <createCity name="x759" x="759" y="603" radius="0" color="black"/>
+ <createCity name="x999" x="999" y="999" radius="0" color="black"/>
+ <createCity name="x717" x="717" y="662" radius="0" color="black"/>
+ <createCity name="x191" x="191" y="178" radius="0" color="black"/>
+ <createCity name="x450" x="450" y="658" radius="0" color="black"/>
+ <printKdTree/>
+ <createCity name="x152" x="152" y="775" radius="0" color="black"/>
+ <createCity name="x841" x="841" y="697" radius="0" color="black"/>
+ <createCity name="x115" x="115" y="670" radius="0" color="black"/>
+ <createCity name="x475" x="475" y="638" radius="0" color="black"/>
+ <createCity name="x353" x="353" y="338" radius="0" color="black"/>
+ <createCity name="x608" x="608" y="849" radius="0" color="black"/>
+ <createCity name="x639" x="639" y="258" radius="0" color="black"/>
+ <createCity name="x586" x="586" y="652" radius="0" color="black"/>
+ <createCity name="x818" x="818" y="360" radius="0" color="black"/>
+ <createCity name="x221" x="221" y="216" radius="0" color="black"/>
+ <printKdTree/>
+ <createCity name="x510" x="510" y="978" radius="0" color="black"/>
+ <createCity name="x810" x="810" y="622" radius="0" color="black"/>
+ <createCity name="x585" x="585" y="907" radius="0" color="black"/>
+ <createCity name="x498" x="498" y="325" radius="0" color="black"/>
+ <createCity name="x617" x="617" y="559" radius="0" color="black"/>
+ <createCity name="x893" x="893" y="204" radius="0" color="black"/>
+ <createCity name="x772" x="772" y="837" radius="0" color="black"/>
+ <createCity name="x428" x="428" y="680" radius="0" color="black"/>
+ <createCity name="x760" x="760" y="402" radius="0" color="black"/>
+ <createCity name="x888" x="888" y="452" radius="0" color="black"/>
+ <listCities sortBy="name"/>
+ <printBinarySearchTree/>
+ <printKdTree/>
+ <deleteCity name="x152"/>
+ <deleteCity name="x841"/>
+ <deleteCity name="x115"/>
+ <deleteCity name="x475"/>
+ <deleteCity name="x353"/>
+ <deleteCity name="x608"/>
+ <deleteCity name="x639"/>
+ <deleteCity name="x586"/>
+ <deleteCity name="x818"/>
+ <deleteCity name="x221"/>
+ <listCities sortBy="name"/>
+ <printBinarySearchTree/>
+ <printKdTree/>
+ </commands>

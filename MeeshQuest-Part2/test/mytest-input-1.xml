@@ -1,0 +1,14 @@
+<commands
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="part2in.xsd"
+	spatialWidth="1024" spatialHeight="1024">
+ <createCity name="Edinburgh" x="500" y="500" radius="0" color="red"/>
+ <createCity name="Lisbon" x="750" y="600" radius="0" color="orange"/>
+ <createCity name="Varna" x="400" y="800" radius="0" color="red"/>
+ <createCity name="London" x="300" y="400" radius="0" color="yellow"/>
+ <createCity name="Chicago" x="2000" y="400" radius="0" color="yellow"/>
+ <printBinarySearchTree/>
+ <printKdTree/>
+ <nearestNeighbor x="200" y="600"/>
+ <nearestNeighbor x="200" y="1025"/>
+</commands>

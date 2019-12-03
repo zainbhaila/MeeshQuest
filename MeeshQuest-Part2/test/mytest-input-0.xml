@@ -1,0 +1,10 @@
+<commands
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="part2in.xsd"
+ 	spatialWidth="512"
+ 	spatialHeight="512">
+ <createCity name="Beijing" y="38" x="76" radius="0" color="green"/>
+ <createCity name="Shanghai" x="86" y="40" radius="5" color="blue"/>
+ <printKdTree/>
+ <nearestNeighbor x="21" y="33"/>
+</commands>

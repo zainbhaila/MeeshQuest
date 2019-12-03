@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<results>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="Beijing"/>
+      <x value="76"/>
+      <y value="38"/>
+      <radius value="0"/>
+      <color value="green"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="Shanghai"/>
+      <x value="86"/>
+      <y value="40"/>
+      <radius value="5"/>
+      <color value="blue"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="printKdTree"/>
+    <parameters/>
+    <output>
+      <KdTree>
+        <internal splitDim="0" x="76" y="38">
+          <external name="Beijing" x="76" y="38"/>
+          <external name="Shanghai" x="86" y="40"/>
+        </internal>
+      </KdTree>
+    </output>
+  </success>
+  <success>
+    <command name="nearestNeighbor"/>
+    <parameters>
+      <x value="21"/>
+      <y value="33"/>
+    </parameters>
+    <output>
+      <nearestNeighbor color="green" name="Beijing" radius="0" x="76" y="38"/>
+    </output>
+  </success>
+</results>

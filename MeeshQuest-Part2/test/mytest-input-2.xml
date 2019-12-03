@@ -1,0 +1,53 @@
+<commands
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="part2in.xsd"
+	spatialWidth="1024" spatialHeight="1024">
+ <createCity name="Edinburgh" x="500" y="500" radius="0" color="red"/>
+ <createCity name="Lisbon" x="750" y="600" radius="0" color="orange"/>
+ <createCity name="Varna" x="400" y="800" radius="0" color="red"/>
+ <createCity name="London" x="300" y="400" radius="0" color="yellow"/>
+ <createCity name="Prague" x="200" y="200" radius="0" color="green" />
+ <printBinarySearchTree/>
+ <printKdTree/>
+ <createCity name="Madrid" x="900" y="450" radius="0" color="blue"/>
+ <createCity name="Paris" x="700" y="300" radius="0" color="purple"/>
+ <createCity name="Copenhagen" x="800" y="100" radius="0" color="black"/>
+ <createCity name="Nice" x="850" y="250" radius="0" color="red"/>
+ <printBinarySearchTree/>
+ <printKdTree/>
+ <createCity name="Vienna" x="200" y="600" radius="0" color="orange"/>
+ <createCity name="Amsterdam" x="550" y="150" radius="0" color="yellow"/>
+ <createCity name="Munich" x="100" y="900" radius="0" color="green"/>
+ <createCity name="Milan" x="950" y="850" radius="0" color="blue"/>
+ <createCity name="Rome" x="800" y="750" radius="0" color="purple"/>
+ <createCity name="Naples" x="600" y="950" radius="0" color="black"/>
+ <createCity name="Geneva" x="650" y="700" radius="0" color="orange"/>
+ <printBinarySearchTree/>
+ <printKdTree/>
+ <createCity name="Geneva_Duplicate" x="650" y="700" radius="1" color="black"/>
+ <createCity name="Rome" x="600" y="750" radius="1" color="black"/>
+ <createCity name="London" x="300" y="400" radius="2" color="blue"/>
+ <createCity name="Chicago" x="1025" y="100" radius="1" color="blue"/>
+ <printBinarySearchTree/>
+ <printKdTree/>
+ <deleteCity name="London"/>
+ <deleteCity name="Nice"/>
+ <deleteCity name="Amsterdam"/>
+ <deleteCity name="Rome"/>
+ <deleteCity name="Munich"/>
+ <deleteCity name="Edinburgh"/>
+ <deleteCity name="Paris"/>
+ <deleteCity name="Lisbon"/>
+ <deleteCity name="Milan"/>
+ <deleteCity name="London"/>
+ <printBinarySearchTree/>
+ <printKdTree/>
+ <listCities sortBy="name"/>
+ <nearestNeighbor x="210" y="330"/>
+ <nearestNeighbor x="993" y="102"/>
+ <nearestNeighbor x="100" y="1025"/>
+ <clearAll/>
+ <printKdTree/>
+ <printBinarySearchTree/>
+ <nearestNeighbor x="210" y="330"/>
+ </commands>
