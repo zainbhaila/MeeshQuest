@@ -33,7 +33,7 @@ public class MeeshQuest {
 // --------------------------------------------------------------------------------------------
 //  Uncomment these to read from a file (USE THESE FOR YOUR TESTING ONLY)
 	private static final boolean USE_STD_IO = false;
-	private static String inputFileName = "test/mytest-input-5-del.xml";
+	private static String inputFileName = "test/mytest-input-2.xml";
 	private static String outputFileName = "test/mytest-output.xml";
 // --------------------------------------------------------------------------------------------
 
@@ -62,6 +62,7 @@ public class MeeshQuest {
 		ArrayList<City> clist = new ArrayList<City>();
 		BinarySearchTree<City> names = new BinarySearchTree<City>(); 
 		SGTree<City> cmap = new SGTree<City>();
+		SGKDTree<City> kdmap = new SGKDTree<City>();
 
 		try {
 			// validate and parse XML input
@@ -71,6 +72,8 @@ public class MeeshQuest {
 			results.appendChild(root);
 			// get input document root node
 			Element rootNode = input.getDocumentElement();
+			int maxX = Integer.parseInt(rootNode.getAttribute("spatialWidth"));
+			int maxY = Integer.parseInt(rootNode.getAttribute("spatialHeight"));
 			// get list of all nodes in document
 			final NodeList nl = rootNode.getChildNodes();
 			for (int i = 0; i < nl.getLength(); i++) {
@@ -83,9 +86,17 @@ public class MeeshQuest {
 						// parse input command
 						String name = command.getAttribute("name"); 
 						String x = command.getAttribute("x"); 
-						String y = command.getAttribute("y"); 
+						String y = command.getAttribute("y");
 						String radius = command.getAttribute("radius");
 						String color = command.getAttribute("color"); 
+						
+						boolean outOfBounds = false;
+						int parsedX = Integer.parseInt(x);
+						int parsedY = Integer.parseInt(y);
+						
+						if (parsedX < 0 || parsedY < 0 || parsedX > maxX || parsedY > maxY) {
+							outOfBounds = true;
+						}
 						
 						// check if duplicate names and records exist
 						boolean dupName = false;
@@ -100,10 +111,10 @@ public class MeeshQuest {
 							}
 						}
 						
-						if (dupCoord || dupName) { // duplicate name or coords
+						if (dupCoord || dupName || outOfBounds) { // duplicate name or coords or out of box
 							Element error = results.createElement("error");
 							root.appendChild(error);
-							error.setAttribute("type", dupCoord ? "duplicateCityCoordinates" : "duplicateCityName");
+							error.setAttribute("type", outOfBounds ? "cityOutOfBounds" : (dupCoord ? "duplicateCityCoordinates" : "duplicateCityName"));
 							Element comm = results.createElement("command");
 							error.appendChild(comm);
 							comm.setAttribute("name", command.getNodeName());
@@ -155,6 +166,7 @@ public class MeeshQuest {
 							clist.add(added);
 							names.insert(added);
 							cmap.insert(added);
+							kdmap.insert(added);
 						}
 					}
 					else if (command.getNodeName().equals("listCities")) {
@@ -191,12 +203,13 @@ public class MeeshQuest {
 							Element cityList = results.createElement("cityList");
 							
 							// sortBy for all cities
-							if (sortBy.compareTo("name") == 0) {
+							/*if (sortBy.compareTo("name") == 0) {
 								clist = names.inOrderTraversal();
 							}
 							else {
 								clist = cmap.inOrderTraversal();
-							}
+							}*/
+							clist = names.inOrderTraversal(); // this part only does sortBy name
 							
 							// add cities to city list
 							for (City city : clist) {
@@ -223,6 +236,7 @@ public class MeeshQuest {
 								clist.remove(cit);
 								names.delete(cit);
 								cmap.delete(cit);
+								kdmap.delete(cit);
 								break;
 							}
 						}
@@ -268,6 +282,7 @@ public class MeeshQuest {
 						clist = new ArrayList<City>();
 						names= new BinarySearchTree<City>();
 						cmap = new SGTree<City>();
+						kdmap = new SGKDTree<City>();
 						
 						// append output to results
 						Element success = results.createElement("success");
@@ -331,6 +346,89 @@ public class MeeshQuest {
 							Element sgt = results.createElement("SGTree");
 							cmap.printing(results, sgt);
 							output.appendChild(sgt);
+							success.appendChild(output);
+						}
+					}
+					else if (command.getNodeName().equals("printKdTree")) {
+						if (kdmap.isEmpty()) { // no cities in tree
+							Element error = results.createElement("error");
+							root.appendChild(error);
+							error.setAttribute("type", "mapIsEmpty");
+							Element comm = results.createElement("command");
+							comm.setAttribute("name", command.getNodeName());
+							error.appendChild(comm);
+							Element parameters = results.createElement("parameters");
+							error.appendChild(parameters);
+						}
+						else {
+							// append output to results
+							Element success = results.createElement("success");
+							root.appendChild(success);
+							Element comm = results.createElement("command");
+							success.appendChild(comm);
+							comm.setAttribute("name", command.getNodeName());
+							Element parameters = results.createElement("parameters");
+							success.appendChild(parameters);
+							Element output = results.createElement("output");
+							Element kdt = results.createElement("KdTree");
+							kdmap.printing(results, kdt);
+							output.appendChild(kdt);
+							success.appendChild(output);
+						}
+					}
+					else if (command.getNodeName().equals("nearestNeighbor")) {
+						// parse input command
+						String x = command.getAttribute("x"); 
+						String y = command.getAttribute("y");
+						
+						boolean outOfBounds = false;
+						int parsedX = Integer.parseInt(x);
+						int parsedY = Integer.parseInt(y);
+						
+						if (parsedX < 0 || parsedY < 0 || parsedX > maxX || parsedY > maxY) {
+							outOfBounds = true;
+						}
+						
+						if (outOfBounds || kdmap.isEmpty()) { // no cities in tree
+							Element error = results.createElement("error");
+							root.appendChild(error);
+							error.setAttribute("type", outOfBounds ? "queryOutOfBounds" : "mapIsEmpty");
+							Element comm = results.createElement("command");
+							comm.setAttribute("name", command.getNodeName());
+							error.appendChild(comm);
+							Element parameters = results.createElement("parameters");
+							Element xparam = results.createElement("x");
+							xparam.setAttribute("value", String.valueOf(parsedX));
+							Element yparam = results.createElement("y");
+							yparam.setAttribute("value", String.valueOf(parsedY));
+							parameters.appendChild(xparam);
+							parameters.appendChild(yparam);
+							error.appendChild(parameters);
+						}
+						else {
+							// append output to results
+							Element success = results.createElement("success");
+							root.appendChild(success);
+							Element comm = results.createElement("command");
+							success.appendChild(comm);
+							comm.setAttribute("name", command.getNodeName());
+							Element parameters = results.createElement("parameters");
+							success.appendChild(parameters);
+							Element xparam = results.createElement("x");
+							xparam.setAttribute("value", String.valueOf(parsedX));
+							Element yparam = results.createElement("y");
+							yparam.setAttribute("value", String.valueOf(parsedY));
+							parameters.appendChild(xparam);
+							parameters.appendChild(yparam);
+							Element output = results.createElement("output");
+							Element kdt = results.createElement("nearestNeighbor");
+							City neighbor = kdmap.nearestNeighbor(parsedX, parsedY, maxX, maxY);
+							kdt.setAttribute("name", neighbor.name);
+							kdt.setAttribute("x", neighbor.x);
+							kdt.setAttribute("y", neighbor.y);
+							kdt.setAttribute("radius", neighbor.radius);
+							kdt.setAttribute("color", neighbor.color);
+							output.appendChild(kdt);
 							success.appendChild(output);
 						}
 					}

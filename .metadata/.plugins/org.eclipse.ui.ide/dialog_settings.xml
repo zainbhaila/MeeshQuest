@@ -11,6 +11,7 @@
 			<item value=""/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
 			<item value="C:\Users\Zain Bhaila\Downloads\MeeshQuest-Skeleton.zip"/>
 		</list>
 	</section>
@@ -20,6 +21,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Zain Bhaila\Documents\MeeshQuest\MeeshQuest-Part2"/>
 			<item value="C:\Users\Zain Bhaila\Documents\MeeshQuest"/>
 			<item value="C:\Users\Zain Bhaila\Documents\MeeshQuest\MeeshQuest-Part1"/>
 		</list>

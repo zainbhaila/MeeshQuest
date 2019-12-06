@@ -32,4 +32,17 @@ public class City implements Comparable<City> {
 			return Float.compare(Float.parseFloat(x1), Float.parseFloat(x2));
 		}
 	}
+	
+	public int compareToCoordsReversed(City arg0) {
+		String x1 = this.x;
+		String y1 = this.y;
+		String x2 = arg0.x;
+		String y2 = arg0.y;
+		if (Float.parseFloat(y1) == Float.parseFloat(y2)) {
+			return Float.compare(Float.parseFloat(x1), Float.parseFloat(x2));
+		}
+		else {
+			return Float.compare(Float.parseFloat(y1), Float.parseFloat(y2));
+		}
+	}
 }
