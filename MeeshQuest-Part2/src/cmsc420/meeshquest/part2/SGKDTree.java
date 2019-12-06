@@ -21,7 +21,7 @@ public class SGKDTree<T extends Comparable<T>> extends SGTree<T> {
 	}
 	
 	public boolean isEmpty() {
-		return (root == null ? true : false);
+		return (root == null || (root.left == null && root.right == null && !root.isExternal()) ? true : false);
 	}
 	
 	public City nearestNeighbor(int x, int y, int maxX, int maxY) {
@@ -46,15 +46,19 @@ public class SGKDTree<T extends Comparable<T>> extends SGTree<T> {
 			
 			City firstClosest = nearestNeighborHelper(x, y, p.left, leftCell, bestDist, closest);
 			City secondClosest = nearestNeighborHelper(x, y, p.right, rightCell, bestDist, closest);
-			double firstDist = distance(x, y, Integer.parseInt(firstClosest.x), Integer.parseInt(firstClosest.y));
-			double secondDist = distance(x, y, Integer.parseInt(secondClosest.x), Integer.parseInt(secondClosest.y));
-			if (firstDist < bestDist) {
-				bestDist = firstDist;
-				closest = firstClosest;
+			if (firstClosest != null) {
+				double firstDist = distance(x, y, Integer.parseInt(firstClosest.x), Integer.parseInt(firstClosest.y));
+				if (firstDist < bestDist) {
+					bestDist = firstDist;
+					closest = firstClosest;
+				}
 			}
-			if (secondDist < bestDist) {
-				bestDist = secondDist;
-				closest = secondClosest;
+			if (secondClosest != null) {
+				double secondDist = distance(x, y, Integer.parseInt(secondClosest.x), Integer.parseInt(secondClosest.y));
+				if (secondDist < bestDist) {
+					bestDist = secondDist;
+					closest = secondClosest;
+				}
 			}
 		}
 		return closest;
@@ -263,7 +267,7 @@ public class SGKDTree<T extends Comparable<T>> extends SGTree<T> {
 			this.root = null;
 		}
 		else {
-			this.delete(this.root, toDelete, null);
+			this.root = this.delete(this.root, toDelete, null);
 		}
 		n--;
 		if (2*n < m) {

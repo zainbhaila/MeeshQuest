@@ -27,14 +27,14 @@ public class MeeshQuest {
 
 // --------------------------------------------------------------------------------------------
 //  Uncomment these to read from standard input and output (USE THESE FOR YOUR FINAL SUBMISSION)
-//	private static final boolean USE_STD_IO = true; 
-//	private static String inputFileName = "";
-//	private static String outputFileName = "";
+	private static final boolean USE_STD_IO = true; 
+	private static String inputFileName = "";
+	private static String outputFileName = "";
 // --------------------------------------------------------------------------------------------
 //  Uncomment these to read from a file (USE THESE FOR YOUR TESTING ONLY)
-	private static final boolean USE_STD_IO = false;
-	private static String inputFileName = "test/mytest-input-2.xml";
-	private static String outputFileName = "test/mytest-output.xml";
+//	private static final boolean USE_STD_IO = false;
+//	private static String inputFileName = "test/mytest-input-5.xml";
+//	private static String outputFileName = "test/mytest-output.xml";
 // --------------------------------------------------------------------------------------------
 
 	public static void main(String[] args) {
